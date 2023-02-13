@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        h1{
+            font-family: sans-serif;
+            font-weight: bolder
+        }
+        a{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        color: green;
+        }
+         a:visited {
+            background-color: black;
+        }   
+        a:hover{
+        color: greenyellow;
+        }
+        a:active{
+           color: black;
+}
+.especial::after{
+content: '⮜';
+}
+.especial::before{
+    content: '⮞';
+}
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elementos</h1>
+    <ul>
+        <li><a target="_blank" class="especial" href="https://github.com/rcat007">github</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UC8crK_HyhjxZTCkYoKWJweg">youtube</a></li>
+        <li><a target="_blank" class="especial" href="https://www.instagram.com/_robertocat/?next=%2F">instagram</a></li>
+    </ul>
+</body>
+</html>
